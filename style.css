@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --clr-lightCyan: hsl(193, 38%, 86%);
+    --clr-neonGreen: hsl(150, 100%, 66%);
+    --clr-grayishBlue: hsl(217, 19%, 38%);
+    --clr-grayishBlueDark: hsl(217, 19%, 24%);
+    --clr-blue: hsl(218, 23%, 16%);
+    --fs-quote: 28px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--clr-blue);
+}
+
+/* Card */
+.card {
+    margin: 0 auto;
+    background-color: var(--clr-grayishBlueDark);
+    padding: 35px;
+    border-radius: 12px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+p {
+    color: var(--clr-neonGreen);
+    letter-spacing: .4ch;
+}
+h2 {
+    color: var(--clr-lightCyan);
+    font-size: var(--fs-quote);
+}
+h2::before {
+    content: open-quote;
+}
+h2::after {
+    content: close-quote;
+}
+
+.divider {
+    margin-bottom: 35px;
+}
+.btn {
+    background-color: var(--clr-neonGreen);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+}
+.btn:hover {
+    background-color: hsl(150, 100%, 65%);
+    box-shadow: 0 0 10px hsl(150, 100%, 65%), 
+                0 0 40px hsl(150, 100%, 65%), 
+                0 0 80px hsl(150, 100%, 65%);
+}
+.btn img {
+    margin: 0 auto;
+    padding: 10px;
+}
