@@ -72,7 +72,10 @@ Users should be able to:
     ```css
     .btn img {
         animation-name: spin;
+        /* Animation Type */
         animation-duration: 4000ms;
+        /* Animation Duration, here Controls the Spinning Speed */
+        /* Higher the Time, Spin Speed will be Lower. */
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
         }
@@ -85,7 +88,21 @@ Users should be able to:
             }
         }
 
-    /* Supported by Major Browsers */
+    /* Supported by all Browsers */
+    ```
+
+- **Neon Glowing Effect**
+
+    Many may confuse or find difficult to make glow effect, it is easy:
+
+    ```css
+    .btn:hover {
+        background-color: hsl(150, 100%, 65%);
+        box-shadow: 0 0 10px hsl(150, 100%, 65%), 
+                    0 0 40px hsl(150, 100%, 65%), 
+                    0 0 80px hsl(150, 100%, 65%);
+    }
+    /* Keep Increasing the Blur Radius, with same Color Value, */
     ```
 
 ## Author

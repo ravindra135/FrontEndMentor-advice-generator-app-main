@@ -37,6 +37,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    transition: all .23s ease-in;
 }
 p {
     color: var(--clr-neonGreen);

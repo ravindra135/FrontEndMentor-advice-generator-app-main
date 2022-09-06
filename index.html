@@ -9,17 +9,17 @@
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
-  <main class="card">
+  <main class="card" aria-label="Main Card Component">
     <p>ADVICE #<span class="advice-id"></span></p>
     <h2 class="advice">...</h2>
     <div class="divider" aria-label="Divider Image">
-      <picture>
+      <picture aria-label="img to be shown according to sizes">
         <source media="(min-width:900px)" srcset="./images/pattern-divider-desktop.svg">
         <source media="(max-width:900px)" srcset="./images/pattern-divider-mobile.svg">
         <img src="./images/pattern-divider-desktop.svg" alt="divider">
       </picture>
     </div>
-    <button class="btn" aria-label="dice button">
+    <button type="submit" class="btn" aria-label="dice button">
       <img src="./images/icon-dice.svg" alt="">
     </button>
   </main>
