@@ -43,15 +43,15 @@ p {
     color: var(--clr-neonGreen);
     letter-spacing: .4ch;
 }
-h2 {
+h1 {
     color: var(--clr-lightCyan);
     font-size: var(--fs-quote);
     text-align: center;
 }
-h2::before {
+h1::before {
     content: open-quote;
 }
-h2::after {
+h1::after {
     content: close-quote;
 }
 
@@ -68,6 +68,7 @@ h2::after {
     position: absolute;
     bottom: -30px;
     border: none;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: hsl(150, 100%, 65%);
@@ -101,7 +102,10 @@ h2::after {
         height: auto;
         max-height: 480px;
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 27px 10px;
+    }
+    p {
+        font-size: 13px;
     }
     .advice {
         font-size: 24px;
